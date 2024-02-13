@@ -1,0 +1,46 @@
+*{
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.lineContainer{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  animation: bounce 1s infinite alternate;
+}
+
+.line{
+  width: 100px;
+  height: 5px;
+}
+
+h3{
+  animation: opacity 1s;
+}
+
+@keyframes opacity{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+h2{
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+
+@keyframes bounce{
+  from{transform: translateY(10px);}
+  to{transform: translateY(0px);}
+}
